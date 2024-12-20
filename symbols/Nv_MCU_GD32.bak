@@ -683,7 +683,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Cortex-M23, main frequency of up to 72MHz, 64KB Flash and 8KB SRAM"
+		(property "Description" "Cortex-M23, main frequency of up to 72MHz, supports up to 64KB Flash and 8KB SRAM"
 			(at 0 0 0)
 			(effects
 				(font

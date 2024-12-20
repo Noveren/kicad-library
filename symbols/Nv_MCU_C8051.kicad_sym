@@ -2,12 +2,20 @@
 	(version 20231120)
 	(generator "kicad_symbol_editor")
 	(generator_version "8.0")
-	(symbol "GD32E230Kx"
+	(symbol "SILICON_C8051F410"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -12.192 16.256 0)
+			(at -17.018 18.796 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "C8051F410"
+			(at 1.27 -1.778 0)
 			(do_not_autoplace)
 			(effects
 				(font
@@ -15,16 +23,7 @@
 				)
 			)
 		)
-		(property "Value" "GD32E230K"
-			(at 21.336 16.256 0)
-			(do_not_autoplace)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_QFP:LQFP-32_7x7mm_P0.8mm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -33,7 +32,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.gigadevice.com.cn/Public/Uploads/uploadfile/files/20240522/GD32E230xxDatasheetRev2.6.pdf"
+		(property "Datasheet" "https://www.silabs.com/documents/public/data-sheets/C8051F41x.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -42,7 +41,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Cortex-M23, main frequency of up to 72MHz, supports up to 64KB Flash and 8KB SRAM"
+		(property "Description" "CIP-51, LQFP-32"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51,24 +50,38 @@
 				(hide yes)
 			)
 		)
-		(symbol "GD32E230Kx_0_1"
-			(rectangle
-				(start -12.7 15.24)
-				(end 20.32 -17.78)
-				(stroke
-					(width 0)
-					(type default)
+		(property "ki_keywords" "mcu"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(fill
-					(type background)
-				)
+				(hide yes)
 			)
 		)
-		(symbol "GD32E230Kx_1_0"
-			(pin bidirectional line
-				(at -2.54 -20.32 90)
+		(symbol "SILICON_C8051F410_0_0"
+			(pin power_in line
+				(at -20.32 7.62 0)
 				(length 2.54)
-				(name "PA4"
+				(name "V_{IO}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -5.08 -22.86 90)
+				(length 2.54)
+				(name "P1.1/XTAL2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -84,9 +97,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 0 -20.32 90)
+				(at -2.54 -22.86 90)
 				(length 2.54)
-				(name "PA5"
+				(name "P1.2/VREF"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -102,9 +115,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 2.54 -20.32 90)
+				(at 0 -22.86 90)
 				(length 2.54)
-				(name "PA6"
+				(name "P1.3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -120,9 +133,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 5.08 -20.32 90)
+				(at 2.54 -22.86 90)
 				(length 2.54)
-				(name "PA7"
+				(name "P1.4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -138,9 +151,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 7.62 -20.32 90)
+				(at 5.08 -22.86 90)
 				(length 2.54)
-				(name "PB0"
+				(name "P1.5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -156,9 +169,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 -20.32 90)
+				(at 7.62 -22.86 90)
 				(length 2.54)
-				(name "PB1"
+				(name "P1.6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -173,10 +186,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 12.7 -20.32 90)
+			(pin bidirectional line
+				(at 10.16 -22.86 90)
 				(length 2.54)
-				(name "VSS"
+				(name "P1.7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -191,10 +204,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin bidirectional line
 				(at 22.86 -10.16 180)
 				(length 2.54)
-				(name "VDD"
+				(name "P0.0/IDAC0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -212,7 +225,7 @@
 			(pin bidirectional line
 				(at 22.86 -7.62 180)
 				(length 2.54)
-				(name "PA8"
+				(name "P0.1/IDAC1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -230,7 +243,7 @@
 			(pin bidirectional line
 				(at 22.86 -5.08 180)
 				(length 2.54)
-				(name "PA9"
+				(name "P0.2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -246,9 +259,27 @@
 				)
 			)
 			(pin bidirectional line
+				(at -20.32 5.08 0)
+				(length 2.54)
+				(name "RST_{b}/C2CK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
 				(at 22.86 -2.54 180)
 				(length 2.54)
-				(name "PA10"
+				(name "P0.3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -266,7 +297,7 @@
 			(pin bidirectional line
 				(at 22.86 0 180)
 				(length 2.54)
-				(name "PA11"
+				(name "P0.4/TX"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -284,7 +315,7 @@
 			(pin bidirectional line
 				(at 22.86 2.54 180)
 				(length 2.54)
-				(name "PA12"
+				(name "P0.5/RX"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -302,7 +333,7 @@
 			(pin bidirectional line
 				(at 22.86 5.08 180)
 				(length 2.54)
-				(name "PA13/SWDIO"
+				(name "P0.6/CNVSTR"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -320,7 +351,7 @@
 			(pin bidirectional line
 				(at 22.86 7.62 180)
 				(length 2.54)
-				(name "PA14/SWCLK"
+				(name "P0.7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -336,9 +367,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 17.78 270)
+				(at 10.16 20.32 270)
 				(length 2.54)
-				(name "PA15"
+				(name "P2.0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -354,9 +385,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 17.78 270)
+				(at 7.62 20.32 270)
 				(length 2.54)
-				(name "PB3"
+				(name "P2.1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -372,9 +403,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 7.62 17.78 270)
+				(at 5.08 20.32 270)
 				(length 2.54)
-				(name "PB4"
+				(name "P2.2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -390,9 +421,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 5.08 17.78 270)
+				(at 2.54 20.32 270)
 				(length 2.54)
-				(name "PB5"
+				(name "P2.3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -408,9 +439,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 2.54 17.78 270)
+				(at 0 20.32 270)
 				(length 2.54)
-				(name "PB6"
+				(name "P2.4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -425,102 +456,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 0 17.78 270)
-				(length 2.54)
-				(name "PB7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "30"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -2.54 17.78 270)
-				(length 2.54)
-				(name "BOOT0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "31"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
-				(at -5.08 17.78 270)
+				(at -20.32 2.54 0)
 				(length 2.54)
-				(name "VSS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "32"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(symbol "GD32E230Kx_1_1"
-			(pin power_in line
-				(at -15.24 7.62 0)
-				(length 2.54)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -15.24 5.08 0)
-				(length 2.54)
-				(name "PF0/OSCIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -15.24 2.54 0)
-				(length 2.54)
-				(name "PF1/OSCOUT"
+				(name "V_{RTC-BACKUP}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -535,10 +474,64 @@
 					)
 				)
 			)
-			(pin input line
-				(at -15.24 0 0)
+			(pin bidirectional line
+				(at -2.54 20.32 270)
 				(length 2.54)
-				(name "NRST"
+				(name "P2.5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -5.08 20.32 270)
+				(length 2.54)
+				(name "P2.6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 20.32 270)
+				(length 2.54)
+				(name "P2.7/C2D"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -20.32 0 0)
+				(length 2.54)
+				(name "XTAL4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -553,10 +546,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -15.24 -2.54 0)
+			(pin bidirectional line
+				(at -20.32 -2.54 0)
 				(length 2.54)
-				(name "VDDA"
+				(name "XTAL3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -571,10 +564,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -15.24 -5.08 0)
+			(pin power_in line
+				(at -20.32 -5.08 0)
 				(length 2.54)
-				(name "PA0-WKUP"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -589,10 +582,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -15.24 -7.62 0)
+			(pin power_in line
+				(at -20.32 -7.62 0)
 				(length 2.54)
-				(name "PA1"
+				(name "V_{DD}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -607,10 +600,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -15.24 -10.16 0)
+			(pin power_in line
+				(at -20.32 -10.16 0)
 				(length 2.54)
-				(name "PA2"
+				(name "V_{REGIN}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -626,9 +619,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -5.08 -20.32 90)
+				(at -7.62 -22.86 90)
 				(length 2.54)
-				(name "PA3"
+				(name "P1.0/XTAL1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -644,52 +637,17 @@
 				)
 			)
 		)
-	)
-	(symbol "GD32E230K8T6"
-		(extends "GD32E230Kx")
-		(property "Reference" "U"
-			(at -12.192 16.256 0)
-			(do_not_autoplace)
-			(effects
-				(font
-					(size 1.27 1.27)
+		(symbol "SILICON_C8051F410_0_1"
+			(rectangle
+				(start -17.78 17.78)
+				(end 20.32 -20.32)
+				(stroke
+					(width 0)
+					(type default)
 				)
-			)
-		)
-		(property "Value" "GD32E230K8T6"
-			(at 21.336 16.256 0)
-			(do_not_autoplace)
-			(effects
-				(font
-					(size 1.27 1.27)
+				(fill
+					(type background)
 				)
-			)
-		)
-		(property "Footprint" "Package_QFP:LQFP-32_7x7mm_P0.8mm"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Cortex-M23, main frequency of up to 72MHz, 64KB Flash and 8KB SRAM"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 	)

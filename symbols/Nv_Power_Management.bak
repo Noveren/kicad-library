@@ -42,7 +42,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3.3V-LDO, absolute maximum parameter (8V, 300mA)"
+		(property "Description" "3.3V-LDO, absolute (8V, 300mA)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -170,7 +170,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3.3V-LDO, absolute maximum parameter (18V, 300mA)"
+		(property "Description" "3.3V-LDO, absolute (18V, 300mA)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -258,7 +258,7 @@
 			)
 		)
 	)
-	(symbol "ME6214A50M3G"
+	(symbol "MICRONE_ME6214A"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -271,7 +271,7 @@
 				)
 			)
 		)
-		(property "Value" "ME6214A50M3G"
+		(property "Value" "ME6214A"
 			(at 7.62 6.096 0)
 			(do_not_autoplace)
 			(effects
@@ -280,7 +280,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 0 0 0)
 			(effects
 				(font
@@ -298,7 +298,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3.3V-LDO, absolute maximum parameter (18V, 300mA)"
+		(property "Description" "LDO, absolute (18V, 300mA)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -316,7 +316,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "ME6214A50M3G_0_1"
+		(symbol "MICRONE_ME6214A_0_1"
 			(rectangle
 				(start -5.08 5.08)
 				(end 5.08 -5.08)
@@ -329,7 +329,7 @@
 				)
 			)
 		)
-		(symbol "ME6214A50M3G_1_1"
+		(symbol "MICRONE_ME6214A_1_1"
 			(pin power_in line
 				(at 7.62 -2.54 180)
 				(length 2.54)
@@ -386,7 +386,7 @@
 			)
 		)
 	)
-	(symbol "ME6214C33M5G"
+	(symbol "MICRONE_ME6214C"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -399,7 +399,7 @@
 				)
 			)
 		)
-		(property "Value" "ME6214C33M5G"
+		(property "Value" "ME6214C"
 			(at 7.62 6.096 0)
 			(do_not_autoplace)
 			(effects
@@ -426,7 +426,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3.3V-LDO, absolute maximum parameter (18V, 300mA)"
+		(property "Description" "LDO, absolute (18V, 300mA)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -444,7 +444,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "ME6214C33M5G_0_1"
+		(symbol "MICRONE_ME6214C_0_1"
 			(rectangle
 				(start -5.08 5.08)
 				(end 5.08 -5.08)
@@ -457,7 +457,7 @@
 				)
 			)
 		)
-		(symbol "ME6214C33M5G_1_1"
+		(symbol "MICRONE_ME6214C_1_1"
 			(pin power_in line
 				(at -7.62 2.54 0)
 				(length 2.54)
@@ -512,24 +512,6 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 7.62 2.54 180)
-				(length 2.54)
-				(name "VOUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin no_connect line
 				(at 7.62 -2.54 180)
 				(length 2.54)
@@ -547,6 +529,380 @@
 						)
 					)
 				)
+			)
+			(pin power_out line
+				(at 7.62 2.54 180)
+				(length 2.54)
+				(name "VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SIPROIN_SSP7603"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -4.572 6.096 0)
+			(do_not_autoplace)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SSP7603"
+			(at 7.62 6.096 0)
+			(do_not_autoplace)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/SSP7603P33MR/402193.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "ldo, low-dropout regulator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SIPROIN_SSP7603_0_1"
+			(rectangle
+				(start -5.08 5.08)
+				(end 5.08 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "SIPROIN_SSP7603_1_1"
+			(pin power_in line
+				(at 7.62 -2.54 180)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 7.62 2.54 180)
+				(length 2.54)
+				(name "VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "MICRONE_ME6214A33M3G"
+		(extends "MICRONE_ME6214A")
+		(property "Reference" "U"
+			(at -4.572 6.096 0)
+			(do_not_autoplace)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ME6214A33M3G"
+			(at 7.62 6.096 0)
+			(do_not_autoplace)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3.3V-LDO, absolute (18V, 300mA)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "ldo, low-dropout regulator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "MICRONE_ME6214A50M3G"
+		(extends "MICRONE_ME6214A")
+		(property "Reference" "U"
+			(at -4.572 6.096 0)
+			(do_not_autoplace)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ME6214A50M3G"
+			(at 7.62 6.096 0)
+			(do_not_autoplace)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "5.0V-LDO, absolute (18V, 300mA)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "ldo, low-dropout regulator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "MICRONE_ME6214C33M5G"
+		(extends "MICRONE_ME6214C")
+		(property "Reference" "U"
+			(at -4.572 6.096 0)
+			(do_not_autoplace)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ME6214C"
+			(at 7.62 6.096 0)
+			(do_not_autoplace)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3.3V-LDO, absolute (18V, 300mA)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "ldo, low-dropout regulator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "SIPROIN_SSP7603P33MR"
+		(extends "SIPROIN_SSP7603")
+		(property "Reference" "U"
+			(at -4.572 6.096 0)
+			(do_not_autoplace)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SSP7603P33MR"
+			(at 7.62 6.096 0)
+			(do_not_autoplace)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3.3V-LDO, absolute (15V, 500mA)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "ldo, low-dropout regulator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 	)
